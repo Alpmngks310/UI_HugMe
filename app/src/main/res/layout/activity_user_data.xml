@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollUserData"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:overScrollMode="always"
+    android:scrollbars="vertical"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants"
+    android:background="@drawable/awan2"
+    tools:context=".UserDataActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="top|center_horizontal"
+        android:padding="20dp">
+
+        <!-- LOGO -->
+        <FrameLayout
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/glow_background">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="80dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/hugmeee" />
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+        <!-- CONTAINER PUTIH -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input_hugme"
+            android:padding="24dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <!-- TITLE -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Data"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#455A64"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/poppins_bold" />
+
+            <TextView
+                android:id="@+id/txtUserInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lengkapi data diri kamu"
+                android:textSize="14sp"
+                android:textColor="#607D8B"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/poppins_regular" />
+
+            <!-- FULL NAME -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilFullName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Full Name"
+                app:boxStrokeColor="#F4B4C8"
+                app:startIconDrawable="@android:drawable/ic_menu_edit"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusBottomEnd="30dp"
+                app:hintTextColor="#000000"
+                app:startIconTint="#000000"
+                android:textColorHint="#000000">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:paddingStart="50dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- CITY -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCity"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Kota"
+                app:boxStrokeColor="#F4B4C8"
+                app:startIconDrawable="@android:drawable/ic_menu_mylocation"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusBottomEnd="30dp"
+                app:hintTextColor="#000000"
+                app:startIconTint="#000000"
+                android:textColorHint="#000000">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:paddingStart="50dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- GENDER -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#455A64"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/poppins_bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:background="@drawable/bg_input_hugme">
+
+                <RadioButton
+                    android:id="@+id/rbLaki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laki-laki"
+                    android:textColor="#000000"
+                    android:buttonTint="#F4B4C8" />
+
+                <RadioButton
+                    android:id="@+id/rbPerempuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan"
+                    android:textColor="#000000"
+                    android:buttonTint="#F4B4C8" />
+            </RadioGroup>
+
+            <!-- HOBBY -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih Hobi (minimal 3)"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#455A64"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/poppins_bold" />
+
+            <LinearLayout
+                android:id="@+id/layoutHobby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:background="@drawable/bg_input_hugme">
+
+                <CheckBox
+                    android:id="@+id/cbMembaca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Membaca"
+                    android:textColor="#000000"
+                    android:buttonTint="#F4B4C8" />
+
+                <CheckBox
+                    android:id="@+id/cbMusik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Musik"
+                    android:textColor="#000000"
+                    android:buttonTint="#F4B4C8" />
+
+                <CheckBox
+                    android:id="@+id/cbGaming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gaming"
+                    android:textColor="#000000"
+                    android:buttonTint="#F4B4C8" />
+
+                <CheckBox
+                    android:id="@+id/cbOlahraga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Olahraga"
+                    android:textColor="#000000"
+                    android:buttonTint="#F4B4C8" />
+
+                <CheckBox
+                    android:id="@+id/cbTravelling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Travelling"
+                    android:textColor="#000000"
+                    android:buttonTint="#F4B4C8" />
+
+                <CheckBox
+                    android:id="@+id/cbLainnya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lainnya"
+                    android:textColor="#000000"
+                    android:buttonTint="#F4B4C8" />
+            </LinearLayout>
+
+            <!-- HOBBY OTHER -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilOtherHobby"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Hobi Lainnya"
+                app:boxStrokeColor="#F4B4C8"
+                app:startIconDrawable="@android:drawable/ic_menu_edit"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusBottomEnd="30dp"
+                app:hintTextColor="#000000"
+                app:startIconTint="#000000"
+                android:textColorHint="#000000">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtOtherHobby"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:paddingStart="50dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- STATUS SPINNER -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#455A64"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/poppins_bold" />
+
+            <Spinner
+                android:id="@+id/spinnerStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bg_input_hugme"
+                android:padding="12dp" />
+
+            <!-- BUTTON SUBMIT -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="12dp"
+                android:layout_marginHorizontal="8dp">
+
+                <Button
+                    android:id="@+id/btnSubmitData"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:backgroundTint="#F4B4C8"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="SUBMIT DATA"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1"
+                    android:stateListAnimator="@null" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Long press tombol submit untuk reset form"
+                android:textColor="#607D8B"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_regular" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
