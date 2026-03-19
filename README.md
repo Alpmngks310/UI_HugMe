@@ -35,4 +35,4 @@ This application is created as a prototype to fulfill the requirements of a Mobi
 
 ## 👨‍💻 Author
 
-* Name: (your name)
+* Name: Adika Pamungkas
