@@ -40,5 +40,31 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize|stateHidden" />
 
+        <activity
+            android:name=".JournalActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".AddJournalActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ArticleListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ArticleDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ConsultationActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MoodHistoryActivity"
+            android:exported="false" />
+
     </application>
 </manifest>

@@ -81,6 +81,7 @@
                 android:layout_marginTop="18dp">
 
                 <TextView
+                    android:id="@+id/moodHappy"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -89,6 +90,7 @@
                     android:textSize="28sp" />
 
                 <TextView
+                    android:id="@+id/moodNeutral"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -97,6 +99,7 @@
                     android:textSize="28sp" />
 
                 <TextView
+                    android:id="@+id/moodSad"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -105,6 +108,7 @@
                     android:textSize="28sp" />
 
                 <TextView
+                    android:id="@+id/moodAnxious"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -113,6 +117,7 @@
                     android:textSize="28sp" />
 
                 <TextView
+                    android:id="@+id/moodPanic"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -289,6 +294,7 @@
 
         <!-- STATS CARD -->
         <LinearLayout
+            android:id="@+id/cardMoodStats"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -372,7 +378,7 @@
             android:orientation="vertical"
             android:background="@drawable/bg_input_hugme"
             android:padding="20dp"
-            android:layout_marginBottom="24dp">
+            android:layout_marginBottom="16dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -392,6 +398,93 @@
                 android:textColor="#607D8B"
                 android:textSize="14sp"
                 android:lineSpacingExtra="4dp"
+                android:fontFamily="@font/poppins_regular" />
+        </LinearLayout>
+
+        <!-- JOURNALING CARD -->
+        <LinearLayout
+            android:id="@+id/cardJournaling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_input_hugme"
+            android:padding="20dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Journaling"
+                android:textColor="#455A64"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Write your thoughts and feelings"
+                android:textColor="#607D8B"
+                android:textSize="13sp"
+                android:fontFamily="@font/poppins_regular" />
+        </LinearLayout>
+
+        <!-- ARTICLES CARD -->
+        <LinearLayout
+            android:id="@+id/cardArticles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_input_hugme"
+            android:padding="20dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mental Health Articles"
+                android:textColor="#455A64"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Learn more about mental wellness"
+                android:textColor="#607D8B"
+                android:textSize="13sp"
+                android:fontFamily="@font/poppins_regular" />
+        </LinearLayout>
+
+        <!-- CONSULTATION CARD -->
+        <LinearLayout
+            android:id="@+id/cardConsultation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_input_hugme"
+            android:padding="20dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Psychology Consultation"
+                android:textColor="#455A64"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Talk to a professional"
+                android:textColor="#607D8B"
+                android:textSize="13sp"
                 android:fontFamily="@font/poppins_regular" />
         </LinearLayout>
 

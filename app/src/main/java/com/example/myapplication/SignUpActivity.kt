@@ -71,10 +71,16 @@ class SignUpActivity : AppCompatActivity() {
 
         btnSignup.setOnClickListener {
             if (validateInput()) {
+                // Success message sebelum pindah activity
+                Toast.makeText(this, "Registrasi Berhasil! Melanjutkan...", Toast.LENGTH_SHORT).show()
+                
                 val intent = Intent(this, UserDataActivity::class.java)
                 intent.putExtra("username", edtUsername.text.toString().trim())
                 intent.putExtra("email", edtEmail.text.toString().trim())
                 startActivity(intent)
+            } else {
+                // Warning message jika validasi gagal
+                Toast.makeText(this, "Gagal: Harap periksa kembali form pendaftaran", Toast.LENGTH_SHORT).show()
             }
         }
 
