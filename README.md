@@ -56,6 +56,25 @@ The application focuses on:
 
 ---
 
+## ✨ Application Preview
+
+The following screens showcase the current HugMe prototype and illustrate how users can interact with the application throughout their mental wellness journey.
+
+### Key Screens
+
+* Welcome Screen
+* Home Dashboard
+* Mood Tracking
+* Journaling
+* Professional Consultation
+* Mental Health Insights
+
+HugMe was designed with a calm, approachable, and supportive user experience in mind. The interface emphasizes simplicity, emotional comfort, and accessibility to encourage daily engagement and self-reflection.
+
+https://drive.google.com/drive/folders/1oSZL6uErTWBnIJSB9efju-4g1thcG88m?usp=sharing
+
+---
+
 ## 📱 Features
 
 ### Authentication
